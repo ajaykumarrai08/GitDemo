@@ -13,6 +13,12 @@ public class day1 {
 	
 	{
 		System.out.println("Hello");
+		System.out.println("Hello");
+		System.out.println("Hello");
+		System.out.println("Hello");
+		System.out.println("Hello");
+		System.out.println("Hello");
+		System.out.println("Hello");
 	}
 	@AfterSuite
 	public void AfterSuiteExecution()
