@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan Department" parallel="tests" thread-count="2">
+<listeners>
+     <listener class-name="test.Listeners"/>
+</listeners>
+
+  <test thread-count="5" name="Personal Loan">
+ 
+  <parameter name="URL" value="team08@gmail.com"/>
+   <parameter name="APIkey/username" value="123456"/>
+  
+    <classes>
+      <class name="test.day1">
+      <methods>
+                <include name="Demo"/>
+            </methods>
+                
+               </class>
+      <class name="test.day2"/>
+      <class name="test.day3"/>
+      <class name="test.day5"/>
+      <class name="test.day4"/>
+      
+    </classes>
+  </test> <!-- Test -->
+
+  <test name= "Phone Loan">
+   
+  
+       <classes>
+           <class name="test.day4">
+           <methods>
+                <exclude name="Phone.*"/>
+            </methods>
+                
+               </class>
+            </classes>              
+      
+   </test>
+</suite> <!-- Suite -->
